@@ -57,7 +57,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::sub-category.sub-category",
-      "mappedBy": "products"
+      "inversedBy": "products"
     },
     "type": {
       "type": "enumeration",

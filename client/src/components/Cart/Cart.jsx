@@ -20,7 +20,7 @@ const Cart = () => {
   };
 
   const stripePromise = loadStripe(
-    "pk_test_eOTMlr8usx1ctymXqrik0ls700lQCsX2UB"
+    "pk_test_51Nr07TSABvCO100pjogBoY4U7Pbd0n8voQMwNAjEX5IoCT4bytrjg0JZRSsRROYvAfshQ6TWzM1U5zc31OS67TtP0063SGi4mq"
   );
   const handlePayment = async () => {
     try {
@@ -31,7 +31,6 @@ const Cart = () => {
       await stripe.redirectToCheckout({
         sessionId: res.data.stripeSession.id,
       });
-
     } catch (err) {
       console.log(err);
     }
